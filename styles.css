@@ -1,0 +1,52 @@
+body {
+  font-family: 'Arvo', serif;
+  background-color: #ABB2B9;
+}
+#header {
+  background-color: #566573;
+  border-bottom: #18EA7E solid 5px;
+  padding: 4px;
+  color: #18EA7E;
+}
+#header h1 {
+  margin-left: 10px;
+}
+.col-sm {
+  height: 300px;
+  border: #18EA7E solid 2px;
+  background-color: #566573;
+  border-radius: 15px;
+  color: #18EA7E;
+  margin: 10px;
+  text-align: center;
+  padding-top: 110px;
+}
+#keyboard {
+  text-align: center;
+  border: #18EA7E solid 2px;
+  background-color: #566573;
+  border-radius: 15px;
+  color: #18EA7E;
+  width: 75%;
+  padding: 10px;
+  margin: auto;
+}
+#keyboard button {
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+}
+#keyboard button:hover {
+  background-color: #18EA7E;
+}
+#newGame {
+  text-align: center;
+  margin: 15px;
+}
+#newGame_button {
+  background-color: #18EA7E;
+  border-color: #566573;
+  color: #566573;
+  font-size: 25px;
+  box-shadow: 0px;
+}
