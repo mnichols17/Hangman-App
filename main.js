@@ -60,7 +60,7 @@ function playGame(word){
       }
       document.getElementById('panel_1').innerHTML = `<h1>${wrongCount}</h1>`;
       if(correct == wordArray.length){endGame(true, word);}
-      else if(wrongCount =< 0) {endGame(false, word);}
+      else if(wrongCount <= 0) {endGame(false, word);}
     }
   }
 }
