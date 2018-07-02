@@ -1,5 +1,5 @@
 let correct = 0;
-let wrongCount = 0;
+let wrongCount = 7;
 let wins = 0;
 
 // Creates a new game
@@ -10,7 +10,7 @@ document.getElementById('newGame_button').onclick = function(){
   var buttons = document.getElementsByClassName('btn-light');
   for(button of buttons){button.style.background = "white";}
   correct = 0;
-  wrongCount = 0;
+  wrongCount = 7;
   getWord();
 };
 
@@ -56,11 +56,11 @@ function playGame(word){
         this.style.background = "aqua";
       } else {
         this.style.background = "red";
-        wrongCount++;
+        wrongCount--;
       }
       document.getElementById('panel_1').innerHTML = `<h1>${wrongCount}</h1>`;
       if(correct == wordArray.length){endGame(true, word);}
-      else if(wrongCount >= 7) {endGame(false, word);}
+      else if(wrongCount =< 0) {endGame(false, word);}
     }
   }
 }
