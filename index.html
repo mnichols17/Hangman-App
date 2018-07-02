@@ -11,7 +11,8 @@
 
 <body onload="getWord()">
   <div id="header">
-    <h1>Hangman</h1>
+    <h1 style="float:left;">Hangman</h1>
+    <h2 id="winCount" style="float:right;">Games Won: 0</h2>
   </div>
 
   <div class="container">
@@ -19,6 +20,7 @@
       <div class="col-sm" id="panel_1">
       </div>
       <div class="col-sm" id="panel_2">
+        <h2 id="guessString"></h2>
       </div>
     </div>
   </div>
