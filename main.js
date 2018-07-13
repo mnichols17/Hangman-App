@@ -23,7 +23,6 @@ function getWord(){
   xhr.onload = function(){
     if(this.status == 200){
       let data = JSON.parse(this.responseText);
-      console.log(data);
       if(checkWord(data["word"])){
         playGame(data["word"]);
       } else {
