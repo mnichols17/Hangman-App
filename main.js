@@ -17,7 +17,8 @@ document.getElementById('newGame_button').onclick = function(){
 // Gets the word that the user will guess
 function getWord(){
   let xhr = new XMLHttpRequest();
-  const url = "https://api.wordnik.com/v4/words.json/randomWord?hasDictionaryDef=true&maxCorpusCount=-1&minDictionaryCount=1&maxDictionaryCount=-1&minLength=5&maxLength=-1&api_key=ab0d5274c4e036127a40d059f3c06ea27056d56b0e0300d75"
+  const key = "" // API key goes here
+  const url = "https://api.wordnik.com/v4/words.json/randomWord?hasDictionaryDef=true&maxCorpusCount=-1&minDictionaryCount=1&maxDictionaryCount=-1&minLength=5&maxLength=-1&api_key="+key;
   xhr.open('GET',url,true);
 
   xhr.onload = function(){
